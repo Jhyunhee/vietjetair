@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="vietjetair.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="vietjetair.js"></script>
+</head>
+
+<body>
+    <div class="indicator"></div>
+    <div class="popup">
+        <div class="popup-content">
+            <span>2019 한세안 특별정상회의 기간 김해국제공항 보안검색 강화 안내 (11.25-27) [자세히 보기]</span>
+            <img src="icon/x.png" alt="팝업이미지">
+        </div>
+    </div>
+
+<!--
+    <header>
+        <div class="logo">
+            <div class="logo-content">
+                <img src="icon/logo.png" alt="로고이미지"></div>
+        </div>
+        <div class="mobilenav">
+    <input type="checkbox" id="menu-btn">
+    <label for="menu-btn">
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+        <span class="btn-line"></span>
+    </label>
+    <div class="side-nav">
+        <input type="checkbox" id="sub1-chk">
+        <ul>
+            <li><a href="#">운행정보</a></li>
+            <li><a href="#">항공권구입처</a></li>
+            <li><a href="#">예약안내</a></li>
+            <li><a href="#">비엣젯소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+    </div>
+    </div>
+    </header>
+-->
+
+    <nav>
+        <div class="nav-wrap">
+            <ul>
+                <li>운항정보</li>
+                <li>항공권구입처</li>
+                <li>예약안내</li>
+                <li>비엣젯소개</li>
+                <li>서비스</li>
+                <li>고객센터</li>
+                <li>로그인</li>
+            </ul>
+            <div class="submenu">
+                <ul>
+                    <li>도착지</li>
+                    <li>운송약관</li>
+                    <li>비행 스케줄</li>
+                    <li>항공편 상황</li>
+                    <li>항공권 조건</li>
+                    <li>공항과 터미널</li>
+                    <li>요금 및 수수료</li>
+                    <li>비엣젯항공 경유 안내</li>
+                    <li>항공기 및 항공기의 유형</li>
+                    <li>“Lost & Found” Contacts Detail</li>
+                </ul>
+                <ul>
+                    <li>티켓 판매점</li>
+                    <li>판매 대리점</li>
+                    <li>할인</li>
+                </ul>
+                <ul>
+                    <li>나의 예약안내</li>
+                    <li>단체예약</li>
+                    <li>결제방법</li>
+                    <li>VAT 인보이스</li>
+                </ul>
+                <ul>
+                    <li>항공기 및 항공기의 유형</li>
+                    <li>기업소개</li>
+                    <li>개인정보 처리방침</li>
+                </ul>
+                <ul>
+                    <li>특별한 도움</li>
+                    <li>카고</li>
+                    <li>면세품</li>
+                    <li>SkyBoss</li>
+                    <li>기내 서비스</li>
+                    <li>수화물 서비스</li>
+                    <li>사전 좌석 지정 서비스</li>
+                    <li>피해구제계획 및 신청서</li>
+                    <li>항공교통이용자 서비스 계획</li>
+                </ul>
+                <ul>
+                    <li>콜 센터</li>
+                    <li>FAQ</li>
+                    <li>기업고객</li>
+                </ul>
+                <ul>
+                    <li>여행사</li>
+                    <li>회원</li>
+                    <li>예약센터</li>
+                    <li>위탁센터</li>
+                    <li>Vietjet Air 직원</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="main-wrap">
+            <div class="main-content">
+                <div class="main-top">
+                    <ul>
+                        <li><img src="icon/airportplane.png" alt="항공">항공권</li>
+                        <li><img src="icon/sports-car.png" alt="렌터카">렌터카</li>
+                        <li><img src="icon/bed.png" alt="호텔">호텔</li>
+                        <li><img src="icon/edit.png" alt="체크인">체크인</li>
+                        <li><img src="icon/users.png" alt="예약정보관리">예약정보관리</li>
+                    </ul>
+                </div>
+                <div class="main-text">
+                         <ul class="tabs">
+                             <li class="active">왕복</li>
+                             <li>편도</li>
+                             <li>다구간</li>
+                         </ul>
+                    </div>                 
+                <div class="main-shuttle">            
+                <div class="repeat">
+                        <img src="icon/repeat.png" alt="이미지">
+                    <img src="icon/repeat.png" alt="이미지">
+                    </div>
+                <div class="start">
+                    <select>
+                        <option value="">출발지</option>
+                        <option value="">서울</option>
+                        <option value="">대구</option>
+                        <option value="">부산</option>
+                    </select>
+                </div>
+                <div class="arrival">
+                    <select>
+                        <option value="">도착지</option>
+                        <option value="">다낭</option>
+                        <option value="">호치민</option>
+                        <option value="">푸꾸옥</option>
+                    </select>
+                </div>
+                <div class="goday">
+                    <select>
+                        <option value="">가는 날</option>
+                        <option value="">2019.12.1</option>
+                        <option value="">2019.12.2</option>
+                        <option value="">2019.12.3</option>
+                    </select>
+                </div>
+                <div class="return">
+                        <select>
+                        <option value="">오는 날</option>
+                        <option value="">2019.12.1</option>
+                        <option value="">2019.12.2</option>
+                        <option value="">2019.12.3</option>
+                    </select>
+                </div>
+                <div class="passenger">
+                        <select>
+                        <option value="">탑승객수</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+                <div class="currency">
+                        <select>
+                        <option value="">통화</option>
+                        <option value="">USD</option>
+                        <option value="">KRW</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+                <button>조회</button>
+                          
+                </div>
+                <div class="main-singleticket">
+                    <div class="repeat">
+                        <img src="icon/repeat.png" alt="이미지">
+                    </div>
+                    <div class="start">
+                    <select>
+                        <option value="">출발지</option>
+                        <option value="">서울</option>
+                        <option value="">대구</option>
+                        <option value="">부산</option>
+                    </select>
+                </div>
+                <div class="arrival">
+                    <select>
+                        <option value="">도착지</option>
+                        <option value="">다낭</option>
+                        <option value="">호치민</option>
+                        <option value="">푸꾸옥</option>
+                    </select>
+                </div>
+                <div class="goday">
+                    <select>
+                        <option value="">가는 날</option>
+                        <option value="">2019.12.1</option>
+                        <option value="">2019.12.2</option>
+                        <option value="">2019.12.3</option>
+                    </select>
+                </div>
+                <div class="passenger">
+                        <select>
+                        <option value="">탑승객수</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+                <div class="currency">
+                        <select>
+                        <option value="">통화</option>
+                        <option value="">USD</option>
+                        <option value="">KRW</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+                <button>조회</button>
+                </div>
+                <div class="main-freedom">
+                    <div class="repeat">
+                       <img src="icon/long-arrow-pointing-to-the-right.png" alt="이미지">  
+                       <img src="icon/repeat.png" alt="이미지"> 
+                       <img src="icon/long-arrow-pointing-to-the-right.png" alt="이미지"> 
+                        <img src="icon/repeat.png" alt="이미지">
+                    </div>
+                    <div class="goday">
+                    <select>
+                        <option value="">가는 날</option>
+                        <option value="">2019.12.1</option>
+                        <option value="">2019.12.2</option>
+                        <option value="">2019.12.3</option>
+                    </select>
+                </div> 
+                    <div class="start">
+                    <select>
+                        <option value="">출발지</option>
+                        <option value="">서울</option>
+                        <option value="">대구</option>
+                        <option value="">부산</option>
+                    </select>
+                </div>
+                <div class="arrival">
+                    <select>
+                        <option value="">도착지</option>
+                        <option value="">다낭</option>
+                        <option value="">호치민</option>
+                        <option value="">푸꾸옥</option>
+                    </select>
+                </div>
+                <div class="twostart">
+                    <select>
+                        <option value="">출발지</option>
+                        <option value="">서울</option>
+                        <option value="">대구</option>
+                        <option value="">부산</option>
+                    </select>
+                </div>
+                <div class="twoarrival">
+                    <select>
+                        <option value="">도착지</option>
+                        <option value="">다낭</option>
+                        <option value="">호치민</option>
+                        <option value="">푸꾸옥</option>
+                    </select>
+                </div>
+                <div class="twogoday">
+                    <select>
+                        <option value="">가는 날</option>
+                        <option value="">2019.12.1</option>
+                        <option value="">2019.12.2</option>
+                        <option value="">2019.12.3</option>
+                    </select>
+                </div>
+                <div class="passenger">
+                        <select>
+                        <option value="">탑승객수</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+                <div class="currency">
+                        <select>
+                        <option value="">통화</option>
+                        <option value="">USD</option>
+                        <option value="">KRW</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+                <button>조회</button>
+            </div>  
+        </div>
+        </div>
+    </main>
+    
+    <div class="service">
+       <div class="service-content">
+        <h3>서비스</h3>
+        <div class="service-box">
+            <img src="icon/tickets.png" alt="항공권">
+            <ul>
+                <li>항공권</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <img src="icon/seat.png" alt="사전좌석">
+            <ul>
+                <li>사전좌석</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <img src="icon/suitcase.png" alt="수화물">
+            <ul>
+                <li>수화물</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <img src="icon/duty-free.png" alt="면세점">
+            <ul>
+                <li>면세점</li>
+            </ul>
+        </div>
+        <div class="service-box">
+            <img src="icon/burger.png" alt="기내서비스">
+            <ul>
+                <li>기내서비스</li>
+            </ul>
+        </div>
+        
+            
+        </div>
+    </div>
+    
+    <div class="event">
+    <div class="event-content">
+        <h3>특가 이벤트</h3>
+        <div class="event-box">
+           <span>신규취항</span>
+            <img src="icon/event_1.jpg" alt="나트랑">
+            <ul>
+                <li>부산 -> 나트랑</li>
+                <li>편도총액금액</li>
+                <li>￦70,000</li>
+                <li>(2019.07.16일부터 정기 운항)</li>
+            </ul>
+        </div>
+        <div class="event-box">
+           <span>리조트</span>
+            <img src="icon/event_2.jpg" alt="다낭">
+            <ul>
+                <li>인천 -> 다낭</li>
+                <li>비엣젯항공과 함께 비행하시면서,</li>
+                <li>푸라마 리조트 다낭에 머무시는 동안</li>
+                <li>큰 혜택을 누려보세요</li>
+            </ul>
+        </div>
+        <div class="event-box">
+           <span>항공권</span>
+            <img src="icon/event_3.jpg" alt="푸꾸옥">
+            <ul>
+                <li>인천 -> 푸꾸옥</li>
+                <li>3일간의 골든데이</li>
+                <li>비엣젯과 함께하는 편안하고 즐거운 여행!</li>
+                <li>(2019.07.29~31)</li>
+            </ul>
+            </div>
+             <div class="eventarrow">
+                <img src="icon/left-arrow.png" alt="버튼">
+            <img src="icon/left-arrow.png" alt="버튼">
+        </div>
+    </div></div>
+    
+    <div class="promotion">
+        <img src="icon/promotion.jpg" alt="프로모션">
+    </div>
+    
+    <div class="bottom">
+    <div class="notice">
+        <div class="news">
+          <h3>공지사항</h3>
+           <div class="news-content">
+           <ul>
+               <li>뉴스</li>
+               <li>날씨</li>
+               <li>여행정보</li>
+               <li>FAQ</li>
+               <img src="icon/plus.png" alt="플러스">
+           </ul>
+           <div class="newssubmenu">
+            <ul>
+                <li>비엣젯 항공, 지난해 대비 여객부문 매출 49% 증가하는 성장세 보여</li>
+                <li>특별한 여름 휴가를 위한 '러브 커넥션 썸머 캠페인' 론칭 - 6월 1일부터 7월 31일까지 휴가철 분위기를 만끽하게 할 특별한 이벤트 진행</li>
+                <li>설 연휴 동안 항공편 2,500편 이상 임시증편 - 설 연휴 기간 항공 수요 증가에 부응하기 위해 항공편 확대</li>
+                <li>인기 영화 '미니언즈' 캐릭터 래핑 항공기 운항</li>
+                <li>인천 ~ 호치민 정기노선 신규 취항</li>
+                <li>"매일 12시면, 비엣젯을 하자" 프로모션 - 3백만장의 특가 항공권</li>
+                <li>온라인 쇼핑 축제일에 9,000동부터만 가격이 있는 10,000 비행 기회 이상이 있습니다.</li>
+                <li>Vietjet 은 호치민시 ~ 타이페이 간의 비행 노선을 개방합니다. 무료 항공편을 개최합니다.</li>
+                <li>노이 바이 국제 공항의 T2 역은 취임되고 첫 승객들을 환영합니다</li>
+                <li>Vietjet 은 승객에게 항공편의 절차를 하는 시간을 지원합니다.</li>
+            </ul>
+            </div>
+        </div>
+    </div></div>    
+    <div class="travel">
+       <h3>인기 여행지</h3>       
+        <div class="travel-content">
+           <div class="travel-wrap">
+           <div class="travel-box">
+                <span>Phu Quoc</span>
+                <img src="icon/travel_2.jpg" alt="푸꾸옥">
+            </div>
+            <div class="travel-box">
+                <span>Ho Chi Minh</span>
+                <img src="icon/travel_1.jpg" alt="호치민">
+            </div>
+            <div class="travel-box">
+                <span>Da nang</span>
+                <img src="icon/travel_3.jpg" alt="다낭">
+            </div>
+            </div>
+            <div class="arrow">
+                <img src="icon/left-arrow.png" alt="버튼">
+            <img src="icon/left-arrow.png" alt="버튼">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            
+            <div class="footerbox">
+               <span>+82 2 319-4560</span>
+               <div class="img-wrap">
+                <img src="icon/youtube.png" alt="유튜브">
+                <img src="icon/facebook.png" alt="페이스북">
+                <img src="icon/twitter.png" alt="트위터">
+                </div>
+            </div>
+            <ul>
+                <li>VIETJET AVIATION JOINT STOCK COMPANY</li>
+                <li>302/3 kim Ma Street, Ngoc Khanh Ward, Ba Dinh District, Ha Noi, Viet Nam</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

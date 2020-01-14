@@ -1,0 +1,389 @@
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+.popup{height: 50px;}
+.popup .popup-content{max-width: 1200px; margin: 0 auto; height: 100%; position: relative; text-align: center;}
+.popup .popup-content img{position: absolute; width: 12px; height: 12px; top: 50%; transform: translateY(-50%); cursor: pointer; padding-left: 50px;}
+.popup .popup-content span{font-size: 14px; line-height: 50px;}
+
+header{position: relative;}
+header .logo{height: 100px; background-color: #e62021;}
+header .logo .logo-content{max-width: 1200px; margin: 0 auto; height: 100%; position: relative; text-align: center;}
+header .logo .logo-content img{position: relative; top: 50%; transform: translateY(-50%); cursor: pointer;}
+
+nav{height: 50px; background-color: #ffea00; line-height: 50px; position: relative; cursor: pointer;}
+nav .nav-wrap{max-width: 1200px; margin: 0 auto; height: 100%;}
+nav .nav-wrap ul{overflow: hidden;}
+nav .nav-wrap > ul li{float: left; width: calc(100% / 7); text-align: center; cursor: pointer; font-size: 15px; font-weight: bold;}
+nav .nav-wrap .submenu{max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; transition: all 0.3s; height: 0; overflow: hidden;}
+nav .nav-wrap .submenu ul{float: left; width: calc(100% / 7); height: 320px; background-color: #ffea00;}
+nav .nav-wrap .submenu ul li{height: 30px; line-height: 30px; text-align: center; font-size: 14px; cursor: pointer;}
+nav .nav-wrap .submenu ul:first-child li:nth-child(10) {font-size: 11px;}
+nav .nav-wrap .submenu ul li:hover{font-weight: bold; height: 30px;}
+nav .nav-wrap ul:hover ~ .submenu{height: 320px;}
+nav .nav-wrap .submenu:hover{height: 320px;}
+
+main .main-wrap{height: 400px; max-width: 100%; background-image: url(icon/mainimg.jpg); background-position: 50%; position: relative;}
+main .main-wrap .main-content{max-width: 1200px; margin: 0 auto; height: 300px; background: rgba(255, 255, 255, 0.79); top: 50%; transform: translateY(-50%); position: relative;}
+
+main .main-wrap .main-content .main-top{position: relative; max-width: 1200px; height: 75px; margin: 0 auto; top: 40px; transform: translateY(-50%); cursor: pointer;}
+main .main-wrap .main-content .main-top ul li{float: left; width: calc(100% / 5); text-align: center; font-weight: bold; font-size: 18px; position: relative; line-height: 50px; top: 10px;}
+main .main-wrap .main-content .main-top ul li img{width: 25px; height: 25px; position: relative; top: 7px; right: 10px;}
+main .main-wrap .main-content .main-top ul li:hover::after{content: ""; position: absolute; top: 60px; width: 50%; height: 7px; left: 27%; background-color: #e62021; z-index: 99;}
+main .main-wrap .main-content .main-top ul li:last-child:hover::after{content: ""; position: absolute; top: 60px; width: 70%; left: 15%; background-color: #e62021;}
+main .main-wrap .main-content .main-top ul::after{content: ""; position: absolute; top: 72px; width: 100%; height: 3px; left: 0; background-color: #ccc;}
+
+main .main-wrap .main-content .main-singleticket {margin-left: 0; padding-left: 0;}
+
+main .main-wrap .main-content .main-shuttle .shuttle-text ul li,
+main .main-wrap .main-content .main-singleticket .singleticket-text ul li,
+main .main-wrap .main-content .main-freedom .freedom-text ul li{position: relative; float: left; top: 25px; left: 6%;}
+main .main-wrap .main-content .main-singleticket .singleticket-text ul li{left: 9%;}
+main .main-wrap .main-content .main-freedom .freedom-text ul li{left: 12%;}
+
+main .main-wrap .main-content .main-text ul {margin-left: 75px; margin-top: 25px; cursor: pointer;}
+main .main-wrap .main-content .main-text ul li{float: left; margin-right: 10px; position: relative;}
+main .main-wrap .main-content .main-text ul li::before{content: "●"; color: #ffea00; margin-right: 10px;}
+main .main-wrap .main-content .main-text ul li:nth-child(2){margin-left: 20px;}
+main .main-wrap .main-content .main-text ul li:nth-child(3){margin-left: 18px;}
+main .main-wrap .main-content .main-text ul li.active::before{content: "●"; color: #e62021;}
+
+main .main-wrap .main-content .main-shuttle .repeat img,
+main .main-wrap .main-content .main-singleticket .repeat img,
+main .main-wrap .main-content .main-freedom .repeat img{width: 30px; height: 30px; position: absolute;}
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(1),
+main .main-wrap .main-content .main-singleticket .repeat img{top: 155px; left: 405px;}
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(2){top: 225px; left: 405px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(1){top: 157px; left: 285px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(2){top: 155px; left: 535px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(3){top: 227px; left: 285px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(4){top: 225px; left: 535px;}
+
+main .main-wrap .main-content .main-shuttle .start,
+main .main-wrap .main-content .main-singleticket .start,
+main .main-wrap .main-content .main-freedom .goday{position: absolute; left: 6%; top: 150px;}
+main .main-wrap .main-content .main-shuttle .arrival,
+main .main-wrap .main-content .main-singleticket .arrival{position: absolute; left: 39%; top: 150px;}
+
+main .main-wrap .main-content .main-shuttle .goday,
+main .main-wrap .main-content .main-singleticket .goday,
+main .main-wrap .main-content .main-freedom .twogoday{position: absolute; left: 6%; top: 220px;}
+main .main-wrap .main-content .main-shuttle .return{position: absolute; left: 39%; top: 220px;}
+main .main-wrap .main-content .main-singleticket .passenger,
+main .main-wrap .main-content .main-shuttle .passenger,
+main .main-wrap .main-content .main-freedom .passenger{position: absolute; left: 68%; top: 150px;}
+main .main-wrap .main-content .main-shuttle .currency,
+main .main-wrap .main-content .main-singleticket .currency,
+main .main-wrap .main-content .main-freedom .currency{position: absolute; left: 68%; top: 220px;}
+
+main .main-wrap .main-content .main-freedom .start{position: absolute; left: 27%; top: 150px;}
+main .main-wrap .main-content .main-freedom .arrival{position: absolute; left: 48%; top: 150px;}
+main .main-wrap .main-content .main-freedom .twostart{position: absolute; left: 27%; top: 220px;}
+main .main-wrap .main-content .main-freedom .twoarrival{position: absolute; left: 48%; top: 220px;}
+
+
+main .main-wrap .main-content .main-shuttle .start select,
+main .main-wrap .main-content .main-singleticket .start select,
+main .main-wrap .main-content .main-shuttle .arrival select,
+main .main-wrap .main-content .main-singleticket .arrival select,
+main .main-wrap .main-content .main-shuttle .goday select,
+main .main-wrap .main-content .main-singleticket .goday select,
+main .main-wrap .main-content .main-shuttle .return select{width: 300px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("icon/arrow.png") 250px no-repeat; background-size: 35px; color: #454040; position: absolute; cursor: pointer;}
+
+
+main .main-wrap .main-content .main-freedom .goday select,
+main .main-wrap .main-content .main-freedom .start select,
+main .main-wrap .main-content .main-freedom .arrival select,
+main .main-wrap .main-content .main-freedom .twogoday select,
+main .main-wrap .main-content .main-freedom .twostart select,
+main .main-wrap .main-content .main-freedom .twoarrival select{width: 200px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("icon/arrow.png") 150px no-repeat; background-size: 35px; color: #454040; position: absolute; cursor: pointer;}
+
+
+main .main-wrap .main-content .main-shuttle .currency select,
+main .main-wrap .main-content .main-singleticket .currency select,
+main .main-wrap .main-content .main-freedom .currency select,
+main .main-wrap .main-content .main-shuttle .passenger select,
+main .main-wrap .main-content .main-singleticket .passenger select,
+main .main-wrap .main-content .main-freedom .passenger select{width: 150px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; background: url("icon/arrow.png") 100px no-repeat; background-size: 35px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer;}
+
+main .main-wrap .main-content .main-shuttle button,
+main .main-wrap .main-content .main-singleticket button,
+main .main-wrap .main-content .main-freedom button{font-size: 20px; background-color:#e62021; border-radius: 30px; border: 1px solid #e62021; position: absolute; right: 75px; top: 185px; width: 100px; height: 43px; cursor: pointer;}
+
+
+main .main-wrap .main-content .main-singleticket,
+main .main-wrap .main-content .main-freedom{display: none;}
+
+
+
+.service{height: 400px; position: relative;}
+.service .service-content {max-width: 1200px; margin: 0 auto; text-align: center; position: relative;}
+.service .service-content h3{font-size: 30px; font-weight: bold; top: 40px; position: relative;}
+.service .service-content .service-box{float: left; margin-right: 112.5px; font-size: 0; position: relative; top: 100px;}
+.service .service-content .service-box:last-child{margin-right: 0;}
+.service .service-content .service-box img{width: 150px; height: 150px; cursor: pointer;}
+.service .service-content .service-box img:hover{transform: scale(1.1); transition: 0.5s;}
+.service .service-content .service-box ul li{position: relative; font-weight: bold; font-size: 18px; top: 50px; cursor: pointer;}
+
+.event{height: 620px; position: relative;}
+.event .event-content{max-width: 1200px; margin: 0 auto; text-align: center; position: relative;}
+.event .event-content h3{font-size: 30px; font-weight: bold; top: 40px;position: relative;}
+.event .event-content .event-box {float: left; position: relative; margin-right: 15px; top: 100px; width: 390px; height: 400px;}
+.event .event-content .event-box:nth-child(4){margin-right: 0;}
+.event .event-content .event-box img{width: 390px; height: 270px; cursor: pointer;}
+.event .event-content .event-box span{position: absolute; top: 15px; right: 17px; border: 6px solid #ffea00; background-color: #ffea00; border-radius: 15px; font-size: 13px; font-weight: bold;cursor: pointer;}
+.event .event-content .event-box ul li{position: relative; top: 20px; cursor: pointer;}
+.event .event-content .event-box ul li:first-child{font-size: 20px; font-weight: bold;}
+.event .event-content .event-box ul li:nth-child(2){top: 35px;}
+.event .event-content .event-box ul li:nth-child(3){top: 45px;}
+.event .event-content .event-box ul li:nth-child(4){top: 55px;}
+.event .event-content .event-box ul:nth-child(3) li:nth-child(3){color: #e62021;}
+
+.promotion {max-width: 100%;}
+.promotion img{width: 100%; height: 330px;}
+
+.bottom{height: 800px; max-width: 1200px; margin: 0 auto; position: relative;}
+.bottom .notice{height: 750px; float: left; }
+.bottom .notice .news{position: relative;}
+.bottom .notice .news h3{font-size: 30px; font-weight: bold; top: 100px; text-align: center; position: relative;}
+.bottom .notice .news .news-content{border: 1px solid #b0aaaa; width: 498px; height: 510px; top: 150px; position: relative; cursor: pointer;}
+.bottom .notice .news .news-content img{width: 20px; height: 20px; position: relative; top: 10px;  left: 25px;}
+.bottom .notice .news .news-content > ul li{float: left; position: relative; top: 10px; margin-right: 50px; font-size: 20px;}
+.bottom .notice .news .news-content > ul li:first-child{margin-left: 50px; font-weight: bold;}
+.bottom .notice .news .news-content > ul{border-bottom: 1px solid #b0aaaa;; height: 40px; position: relative;}
+.bottom .notice .news .news-content > ul li:nth-child(4)::after{content: ""; background: #b0aaaa; width: 1px; height: 40px; top: -10px; left: 100px; position: absolute; }
+.bottom .notice .news .news-content .newssubmenu {position: relative; top: 8px; left: 25px; width: 440px; height: 440px;}
+.bottom .notice .news .news-content .newssubmenu ul li{font-size: 17px; margin-top: 13px; border-bottom: 1px solid #ccc; padding-bottom: 13px; border-style: dotted; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.bottom .travel{height: 750px; width: 620px; top: 0; float: left; margin-left: 20px;}
+.bottom .travel h3{font-size: 30px; font-weight: bold; top: 100px; position: relative; text-align: center;}
+.bottom .travel .travel-content{max-width: 620px; height: 512px; position: relative; top: 150px; width: 640px; overflow: hidden; float: left; cursor: pointer; margin-left: 20px;}
+.bottom .travel .travel-content .travel-wrap{width: 2040px; height: 512px; margin-left: 20px;}
+.bottom .travel .travel-content .travel-box {width: 640px; height: 512px; position: relative; float: left;}
+.bottom .travel .travel-content .travel-box img{width: 640px; height: 512px; position: absolute; top: 0; left: 0;}
+.bottom .travel .travel-content .travel-box span{position: absolute; text-align: center; color: #000; font-size: 25px; font-weight: bold; background-color: rgba(255, 255, 255, 0.44); width: 100%; height: 42px; line-height: 42px; z-index: 3;}
+.bottom .travel .travel-content .arrow img:nth-child(1){position: absolute; top: 50%; left: 20px; width: 40px; height: 50px; cursor: pointer;}
+.bottom .travel .travel-content .arrow img:nth-child(2){position: absolute; top: 50%; width: 40px; height: 50px; left:580px; cursor: pointer; transform: rotate(180deg);}
+
+
+footer{clear: both; width: 100%; height: 160px; background-color: #e62021;}
+footer .footer-content{max-width: 1200px; margin: 0 auto; height: 100%; position: relative;}
+footer .footer-content .footerbox span{color: #fff; font-size: 40px; font-weight: bold; line-height: 40px; position: relative; top: 20px;}
+footer .footer-content ul {clear: both;}
+footer .footer-content ul li{color: #fff; top: 40px; position: relative; text-align: center; margin: 0 auto; line-height: 20px;}
+footer .footer-content .footerbox{position: relative;}
+footer .footer-content .footerbox .img-wrap{width: 200px; height: 100%; position: absolute; right: -50px;top: 20px;}
+footer .footer-content .footerbox img{cursor: pointer; width: 40px; height: 40px; top: 20px;margin-right: 10px;}
+
+header .mobilenav{display: none;}
+.event .event-content .eventarrow img{display: none;}
+
+
+
+
+@media screen and (min-width: 641px) and (max-width: 1080px){
+.popup .popup-content,
+header .logo .logo-content,
+nav .nav-wrap,
+nav .nav-wrap .submenu,
+main .main-wrap .main-content,
+main .main-wrap .main-content .main-top,
+.service .service-content,
+.event .event-content{max-width: 1080px;}    
+    
+    
+.service .service-content .service-box{margin-left: 66px; margin-right: 0;}
+.service .service-content .service-box img{width: 130px; height: 130px;}
+.event .event-content .event-box {margin-right: 0px; margin-left: 30px; width: 320px; height: 600px;}
+.event .event-content .event-box img{width: 320px; height: 250px;}
+.promotion{display: none;}
+.bottom{height: 1270px; position: relative; max-width: 1080px; margin-right: 0;}
+.bottom .notice{max-width: 1080px; height: 450px;}
+.bottom .notice .news h3{top: 0px; max-width: 1080px; left: 2%;}
+.bottom .notice .news .news-content{top: 60px;left: 30px; width: 1018px; height: 300px;}
+.bottom .notice .news .news-content img{margin-left: 80px;}
+.bottom .notice .news .news-content > ul li{margin-right: 160px; left: 100px;}
+.bottom .notice .news .news-content > ul li:nth-child(4)::after{margin-left: 90px;}
+.bottom .notice .news .news-content .newssubmenu {top: 13px; left: 30px; width: 960px; height: 200px;}
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(5),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(6),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(7),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(8),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(9){display: none;}
+.bottom .travel{max-width: 1080px; height: 800px; top: 0; margin-left: 0; margin-top: 40px;}
+.bottom .travel h3{top: 0px; text-align: center; max-width: 1080px; height: 35px; left: 35%;}
+.bottom .travel .travel-content{max-width: 1020px; height: 600px; top: 60px; width: 1020px; margin-left: 10px;}
+.bottom .travel .travel-content .travel-wrap{width: 3060px; height: 600px;}
+.bottom .travel .travel-content .travel-box {width: 1020px; height: 600px;}
+.bottom .travel .travel-content .travel-box img{width: 1020px; height: 600px;}    
+.bottom .travel .travel-content .arrow img:nth-child(2){left: 970px;}
+footer .footer-content{max-width: 1080px;}
+footer .footer-content .footerbox span{left: 30px;}
+footer .footer-content .footerbox .img-wrap{right: 3px;}
+    
+
+    
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(1),
+main .main-wrap .main-content .main-singleticket img:nth-child(1){top: 157px; left: 375px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(2){top: 227px; left: 375px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(1){top: 157px; left: 255px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(2){top: 155px; left: 475px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(3){top: 227px; left: 255px; width: 25px;height: 25px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(4){top: 225px; left: 475px;}
+    
+main .main-wrap .main-content .main-freedom .goday select,
+main .main-wrap .main-content .main-freedom .start select,
+main .main-wrap .main-content .main-freedom .arrival select,
+main .main-wrap .main-content .main-freedom .twogoday select,
+main .main-wrap .main-content .main-freedom .twostart select,
+main .main-wrap .main-content .main-freedom .twoarrival select{width: 180px; background-position: 130px;}    
+    
+main .main-wrap .main-content .main-singleticket .passenger,
+main .main-wrap .main-content .main-shuttle .passenger,
+main .main-wrap .main-content .main-freedom .passenger{position: absolute; left: 70%; top: 150px;}
+main .main-wrap .main-content .main-shuttle .currency,
+main .main-wrap .main-content .main-singleticket .currency,
+main .main-wrap .main-content .main-freedom .currency{position: absolute; left: 70%; top: 220px;}
+main .main-wrap .main-content .main-shuttle button,
+main .main-wrap .main-content .main-singleticket button,
+main .main-wrap .main-content .main-freedom button{right: 30px; top: 185px;}
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px){
+.popup .popup-content{max-width: 640px;}
+.popup .popup-content img{padding-left: 10px;}
+nav{display: none;}
+header .mobilenav{display: block;}
+#menu-btn,
+#sub1-chk{display: none;}
+#menu-btn + label{position: absolute; color: #ffea00; z-index: 2; right: 30px; top:30px; transition: margin 1s 1s; cursor: pointer;}
+#menu-btn + label .btn-line{display: block; width: 30px; height: 5px; background-color: #ffea00; margin: 5px; border-radius: 5px; transition: transform 1s, opacity 1s, background-color 3.8s 0.3s;}
+header #menu-btn:checked + label{margin-left: 400px;}
+header #menu-btn:checked + label .btn-line{background-color: #ffea00;}
+header #menu-btn:checked + label .btn-line:nth-child(1){transform: rotate(45deg) translateY(14px);}
+header #menu-btn:checked + label .btn-line:nth-child(2){opacity: 0; transform: translateX(30px) rotate(360deg);}
+header #menu-btn:checked + label .btn-line:nth-child(3){transform: rotate(-45deg) translateY(-14px);}
+header .mobilenav .side-nav{position: absolute; max-width: 640px; width: 640px; height: 1084px; transition: 1s; top: -1184px;overflow: hidden; z-index: 60;}
+header #menu-btn:checked ~ .side-nav{top:100px; z-index: 50;}
+header .mobilenav .side-nav ul{transition: all 0.3s;}
+header .mobilenav .side-nav ul li a{display: block; text-align: center; text-decoration: none; color: #000; line-height: 50px; padding: 22.5px 0; background-color:#ffea00; font-size: 23px; font-weight: bold;}
+header .mobilenav .side-nav ul li{color: #000; line-height: 50px; padding: 30px 0; background-color: #ffea00;}
+#sub1-chk:checked ~ ul{height: 1084px;}
+
+main .main-wrap .main-content{max-width: 640px; height: 400px;}
+main .main-wrap .main-content .main-top{max-width: 640px;}
+main .main-wrap .main-content .main-top ul li{font-size: 16px;}
+main .main-wrap .main-content .main-text ul {margin-left: 30px;}
+
+
+
+main .main-wrap .main-content .main-shuttle .repeat img,
+main .main-wrap .main-content .main-singleticket .repeat img,
+main .main-wrap .main-content .main-freedom .repeat img{width: 30px; height: 30px; position: absolute;}
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(1),
+main .main-wrap .main-content .main-singleticket .repeat img{top: 155px; left: 295px;}
+main .main-wrap .main-content .main-shuttle .repeat img:nth-child(2){top: 235px; left: 295px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(1){top: 157px; left: 195px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(2){top: 155px; left: 395px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(3){top: 237px; left: 195px;}
+main .main-wrap .main-content .main-freedom .repeat img:nth-child(4){top: 225px; left: 395px;}
+
+main .main-wrap .main-content .main-shuttle .start,
+main .main-wrap .main-content .main-singleticket .start,
+main .main-wrap .main-content .main-freedom .goday{position: absolute; left: 5%; top: 150px;}
+main .main-wrap .main-content .main-shuttle .arrival,
+main .main-wrap .main-content .main-singleticket .arrival{position: absolute; left: 55%; top: 150px;}
+
+main .main-wrap .main-content .main-shuttle .goday,
+main .main-wrap .main-content .main-singleticket .goday,
+main .main-wrap .main-content .main-freedom .twogoday{position: absolute; left: 5%; top: 230px;}
+main .main-wrap .main-content .main-shuttle .return{position: absolute; left: 55%; top: 230px;}
+main .main-wrap .main-content .main-singleticket .passenger,
+main .main-wrap .main-content .main-shuttle .passenger,
+main .main-wrap .main-content .main-freedom .passenger{position: absolute; left: 5%; top: 310px;}
+main .main-wrap .main-content .main-shuttle .currency,
+main .main-wrap .main-content .main-singleticket .currency,
+main .main-wrap .main-content .main-freedom .currency{position: absolute; left: 41.5%; top: 310px;}
+
+main .main-wrap .main-content .main-freedom .start{position: absolute; left: 38%; top: 150px;}
+main .main-wrap .main-content .main-freedom .arrival{position: absolute; left: 70%; top: 150px;}
+main .main-wrap .main-content .main-freedom .twostart{position: absolute; left: 38%; top: 230px;}
+main .main-wrap .main-content .main-freedom .twoarrival{position: absolute; left: 70%; top: 230px;}
+
+
+main .main-wrap .main-content .main-shuttle .start select,
+main .main-wrap .main-content .main-singleticket .start select,
+main .main-wrap .main-content .main-shuttle .arrival select,
+main .main-wrap .main-content .main-singleticket .arrival select,
+main .main-wrap .main-content .main-shuttle .goday select,
+main .main-wrap .main-content .main-singleticket .goday select,
+main .main-wrap .main-content .main-shuttle .return select{width: 250px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("icon/arrow.png") 190px no-repeat; background-size: 35px; color: #454040; position: absolute; cursor: pointer;}
+
+
+main .main-wrap .main-content .main-freedom .goday select,
+main .main-wrap .main-content .main-freedom .start select,
+main .main-wrap .main-content .main-freedom .arrival select,
+main .main-wrap .main-content .main-freedom .twogoday select,
+main .main-wrap .main-content .main-freedom .twostart select,
+main .main-wrap .main-content .main-freedom .twoarrival select{width: 150px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url("icon/arrow.png") 100px no-repeat; background-size: 35px; color: #454040; position: absolute; cursor: pointer;}
+
+
+main .main-wrap .main-content .main-shuttle .currency select,
+main .main-wrap .main-content .main-singleticket .currency select,
+main .main-wrap .main-content .main-freedom .currency select,
+main .main-wrap .main-content .main-shuttle .passenger select,
+main .main-wrap .main-content .main-singleticket .passenger select,
+main .main-wrap .main-content .main-freedom .passenger select{width: 190px; font-size: 20px; padding: 5px 10px 10px; border-color: #c0d1df; letter-spacing: -0.5px; border-radius: 30px; background: url("icon/arrow.png") 130px no-repeat; background-size: 35px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer;}
+
+main .main-wrap .main-content .main-shuttle button,
+main .main-wrap .main-content .main-singleticket button,
+main .main-wrap .main-content .main-freedom button{right: 33px; top: 310px;height: 43px;}
+.service {height: 330px;}
+.service .service-content {max-width: 640px;}
+.service .service-content .service-box{margin-left: 27px; margin-right: 0;}
+.service .service-content .service-box img{width: 90px; height: 90px;}
+    
+.event{height: 700px; clear: both;}
+.event .event-content{max-width: 640px; height: 700px;overflow: hidden;}
+.event .event-content .event-box {margin-right: 0px; margin-left: 20px; float: left; width: 600px; height: 600px; overflow: hidden;}
+.event .event-content .event-box img{width: 600px; height: 400px;}
+.event .event-content .eventarrow img{display: block; width: 50px; height: 50px; position: absolute; top: 310px; left: 20px; cursor: pointer;}
+.event .event-content .eventarrow img:nth-child(2){left: 570px; transform: rotate(180deg);}
+            
+.promotion {display: none;}
+
+.bottom{height: 1200px; max-width: 640px; top: 50px;}
+.bottom .notice{max-width: 640px; height: 450px; margin-right: 0;}
+.bottom .notice .news h3{top: 0px; max-width: 640px;}
+.bottom .notice .news .news-content{top: 50px; left: 20px; width: 600px; height: 300px;}
+.bottom .notice .news .news-content img{margin-left: 20px;}
+.bottom .notice .news .news-content > ul li{margin-right: 70px; left: 30px;}
+.bottom .notice .news .news-content > ul li:nth-child(4)::after{margin-left: 10px;}
+.bottom .notice .news .news-content .newssubmenu {top: 50px; left: 20px; width: 550px; height: 230px; position: absolute;}
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(5),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(6),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(7),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(8),
+.bottom .notice .news .news-content .newssubmenu ul li:nth-child(9){display: none;}
+    
+.bottom .travel{max-width: 640px; height: 600px; margin-left: 0; top: 20px; overflow: hidden; margin-left: 0;}
+.bottom .travel h3{top: 0; max-width: 640px;}
+.bottom .travel .travel-content{max-width: 640px; height: 640px; top: 60px; width: 600px; margin-left: 0px; }
+.bottom .travel .travel-content .travel-wrap{width: 1800px; height: 600px;}
+.bottom .travel .travel-content .travel-box {width: 600px; height: 600px;}
+.bottom .travel .travel-content .travel-box img{width: 600px; height: 500px;}    
+.bottom .travel .travel-content .arrow img:nth-child(1){left: 25px; top: 250px;}
+.bottom .travel .travel-content .arrow img:nth-child(2){left: 550px; top: 250px;}
+    
+    
+footer .footer-content{max-width: 640px}
+footer .footer-content .footerbox span{left: 30px;}
+footer .footer-content .footerbox .img-wrap{right: 3px;}
+    
+.indicator{position: fixed; top: 0px; left: 0; height: 5px; width: 0%; background-color: #e62021; z-index: 99;}
+    
+}
